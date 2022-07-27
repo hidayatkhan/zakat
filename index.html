@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+    <h1>Assignment Number 1</h1>
+
+    Total Amount: <input type="number" placeholder="Type amount"  id="totalAmount"><br>
+    <button onclick="
+    let amount = document.getElementById('totalAmount').value;
+    let zakatAmount =amount/40;
+    document.getElementById('heading').innerText = zakatAmount;
+    ">calculate Zakat</button>
+   <h1 id="heading">Test text</h1>
+   
+
+
+   <h1>Assignment Number 2</h1>
+   Total amount:<input type="number" placeholder="Enter total amount" id="share">
+  <button onclick="
+  let totalAmount = document.getElementById('share').value;
+  let wifeShare=totalAmount/8;
+  let sonShare=totalAmount-wifeShare;
+  document.getElementById('heading1').innerText = wifeShare;
+  ">wife share</button><br>
+  <button  onclick="
+ totalAmount = document.getElementById('share').value;
+   wifeShare=totalAmount/8;
+
+   sonShare=totalAmount-wifeShare;
+  document.getElementById('heading2').innerText = sonShare;">
+  Son Share</button>
+ 
+
+  <h2 id="heading1">Wife Share</h2>
+  <h2 id="heading2">Son Share</h2>
+
+    
+</body>
+</html>
